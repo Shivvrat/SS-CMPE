@@ -242,8 +242,7 @@ if __name__ == '__main__':
                         help='For Saving the current Model')
     parser.add_argument('--dataset',  help='Choose a dataset')
     parser.add_argument('--loss', choices=['MSE', 'MAE'], default='MSE', help='Choose the loss function')
-    parser.add_argument('--data-path', type=str, default="../datasets_npz/", metavar='DL',
-                        help='Location of the datasets npz files')
+    parser.add_argument('--data-path', type=str, metavar='DL',  help='Location of the datasets npz files')
     
     args = parser.parse_args()
     pprint(args)

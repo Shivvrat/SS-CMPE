@@ -134,8 +134,7 @@ if __name__ == '__main__':
     parser.add_argument('--save-model', action='store_true', default=False,
                         help='For Saving the current Model')
     parser.add_argument('--dataset', default='dataset-seg12-60', help='Choose a dataset')
-    parser.add_argument('--data-path', type=str, default="../datasets_npz/", metavar='DL',
-                        help='Location of the datasets npz files')
+    parser.add_argument('--data-path', type=str, metavar='DL',  help='Location of the datasets npz files')
     
     args = parser.parse_args()
     pprint(args)

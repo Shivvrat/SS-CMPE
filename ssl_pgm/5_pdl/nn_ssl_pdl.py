@@ -323,8 +323,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset',  help='Choose a dataset')
     parser.add_argument('--rho', type=float, default=10, metavar='LR',
                         help='learning rate (default: 1.0)')
-    parser.add_argument('--data-path', type=str, default="../datasets_npz/", metavar='DL',
-                        help='Location of the datasets npz files')
+    parser.add_argument('--data-path', type=str, metavar='DL',  help='Location of the datasets npz files')
     
     args = parser.parse_args()
     pprint(args)

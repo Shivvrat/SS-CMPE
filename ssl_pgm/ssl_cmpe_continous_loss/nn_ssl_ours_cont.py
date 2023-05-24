@@ -374,8 +374,7 @@ if __name__ == '__main__':
                         help='Adds penalty term to train')
     parser.add_argument('--beta', type=float, default=2, metavar='LR',
                         help='Beta Value (default: 1.0)')
-    parser.add_argument('--data-path', type=str, default="../datasets_npz/", metavar='DL',
-                        help='Location of the datasets npz files')
+    parser.add_argument('--data-path', type=str, metavar='DL',  help='Location of the datasets npz files')
     
     args = parser.parse_args()
     pprint(args)

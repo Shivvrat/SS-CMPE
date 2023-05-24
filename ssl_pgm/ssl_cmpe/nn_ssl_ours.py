@@ -365,8 +365,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', help='Choose a dataset')
     parser.add_argument('--penalty', action='store_true', default=False,
                         help='Adds penalty term to train')
-    parser.add_argument('--data-path', type=str, default="../datasets_npz/", metavar='DL',
-                        help='Location of the datasets npz files')
+    parser.add_argument('--data-path', type=str, metavar='DL',  help='Location of the datasets npz files')
      
 
     args = parser.parse_args()
