@@ -4,7 +4,7 @@
 
 1. Begin by extracting the datasets from the datasets.zip file. This file contains the required datasets.
 2. Convert the datasets to the required npz format by running the generate_npz.py script. This script will create a folder named datasets_npz with the converted dataset files. Use these files for running the following scripts.
-3. For each method, please provide the location of the npz files using the --data-path argument. 
+3. For each method, please provide the location of the npz files using the --data-path argument. Otherwise the data won't be loaded.
 
 ### Customization and Hyperparameters
 

@@ -148,16 +148,7 @@ def train_ae(args):
     name = f"{args.dataset}"
     output_dir = f"models/{name}"
     # Add a logger to the project
-    config = {
-        "handlers": [
-            {"sink": sys.stdout,
-             "format": "<green>{time:YYYY-MM-DD at HH:mm:ss}</green> | {module}.{function} | <level>{message}</level> "},
-            {"sink": f"{output_dir}/" + "logger_{time}.log",
-             "format": "<green>{time:YYYY-MM-DD at HH:mm:ss}</green> | {module}.{function} | <level>{message}</level> "}
-        ],
-        "extra": {"user": "sva"}
-    }
-    logger.configure(**config)
+
     # torch.manual_seed(args.seed)
     if use_cuda:
         logger.info("Using GPU for training")

@@ -53,16 +53,7 @@ def ilp_solver(args):
         wandb.config.update(args)
     output_dir = f"models/{args.dataset}"
     # Add a logger to the project
-    config = {
-        "handlers": [
-            {"sink": sys.stdout,
-             "format": "<green>{time:YYYY-MM-DD at HH:mm:ss}</green> | {module}.{function} | <level>{message}</level> "},
-            {"sink": f"{output_dir}/" + "logger_{time}.log",
-             "format": "<green>{time:YYYY-MM-DD at HH:mm:ss}</green> | {module}.{function} | <level>{message}</level> "}
-        ],
-        "extra": {"user": "sva"}
-    }
-    logger.configure(**config)
+
     # torch.manual_seed(args.seed)
     folder_path = args.data_path  # Replace with the path to the data_npz folder
 

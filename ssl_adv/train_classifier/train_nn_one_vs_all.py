@@ -194,7 +194,7 @@ def main():
             {"sink": "logging/logger_{time}.log",
              "format": "<green>{time:YYYY-MM-DD at HH:mm:ss}</green> | {module}.{function} | <level>{message}</level> "}
         ],
-        "extra": {"user": "sva"}
+        
     }
     logger.configure(**config)
     # torch.manual_seed(args.seed)

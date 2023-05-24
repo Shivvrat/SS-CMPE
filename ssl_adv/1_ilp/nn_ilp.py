@@ -122,16 +122,7 @@ def ilp_solver(args, model=None):
     else:
         output_dir = f"models/continous/{args.func_f}/{name}"
     # Add a logger to the project
-    config = {
-        "handlers": [
-            {"sink": sys.stdout,
-             "format": "<green>{time:YYYY-MM-DD at HH:mm:ss}</green> | {module}.{function} | <level>{message}</level> "},
-            {"sink": f"{output_dir}/" + "logger_{time}.log",
-             "format": "<green>{time:YYYY-MM-DD at HH:mm:ss}</green> | {module}.{function} | <level>{message}</level> "}
-        ],
-        "extra": {"user": "sva"}
-    }
-    logger.configure(**config)
+
     train_kwargs = {'batch_size': args.batch_size}
     test_kwargs = {'batch_size': args.test_batch_size}
     use_cuda = not args.no_cuda and torch.cuda.is_available()
