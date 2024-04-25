@@ -2,7 +2,7 @@
 
 Welcome to the README file of the official implementation **SS-CMPE** project! This repository contains the code implementation for the paper titled "Learning to Solve the Constrained Most Probable Explanation Task".
 
-[paper](https://arxiv.org/abs/2201.08377](https://proceedings.mlr.press/v238/arya24b/arya24b.pdf)
+[paper](https://proceedings.mlr.press/v238/arya24b/arya24b.pdf)
 
 ## Setup and Installation 
 
